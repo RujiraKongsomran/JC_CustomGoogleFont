@@ -15,10 +15,14 @@ val provider = GoogleFont.Provider(
     certificates = R.array.com_google_android_gms_fonts_certs
 )
 
-val fontName = GoogleFont("Lobster Two")
+//val fontName = GoogleFont("Lobster Two")
+val fontName = GoogleFont("Bebas Neue")
 
 val fontFamily = FontFamily(
-    Font(googleFont = fontName, fontProvider = provider)
+    Font(googleFont = fontName, fontProvider = provider),
+    androidx.compose.ui.text.font.Font(resId = R.font.bebas_neue_regular)
+
+
 )
 
 
